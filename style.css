@@ -356,6 +356,19 @@ nav a:hover { color: var(--gold); }
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+.contact-row a[href^="mailto:"] span {
+  color: var(--ink);
+  font-size: 0;
+}
+.contact-row a[href^="mailto:"] span::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l8 5.1 8-5.1V7H4Zm16 2.8-7.45 4.75a1 1 0 0 1-1.1 0L4 9.8V17h16V9.8Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l8 5.1 8-5.1V7H4Zm16 2.8-7.45 4.75a1 1 0 0 1-1.1 0L4 9.8V17h16V9.8Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
 .contact-row p {
   margin: 0;
   font-size: 14px;
