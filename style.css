@@ -449,8 +449,8 @@ nav a:hover { color: var(--gold); }
   nav { display: none; }
   .hero {
     min-height: 0;
-    height: auto;
-    aspect-ratio: 1162 / 774;
+    height: 80vh;
+    aspect-ratio: auto;
     background-image: url("assets/backgrounds/allstar-hero.jpg");
     background-size: 100% 100%;
     background-position: center top;
@@ -463,13 +463,7 @@ nav a:hover { color: var(--gold); }
   .copy-lines span { display: inline; }
   .copy-lines span + span::before { content: ""; display: block; height: .45em; }
   .menu-row { grid-template-columns: 1fr; gap: 50px; margin-top: 60px; }
-  .menu-row img {
-    width: 100%;
-    height: 80vh;
-    max-height: 620px;
-    object-fit: contain;
-    margin-bottom: 22px;
-  }
+  .menu-row img { height: 150px; margin-bottom: 22px; }
   .menu-more {
     width: 100%;
     max-width: 100%;
@@ -487,10 +481,8 @@ nav a:hover { color: var(--gold); }
     min-width: 0;
   }
   .menu-more-grid img {
-    width: 100%;
-    height: 80vh;
-    max-height: 620px;
-    object-fit: contain;
+    width: min(260px, 100%);
+    height: 150px;
     margin-bottom: 18px;
   }
   .menu-more-grid h3 { min-height: 0; }
