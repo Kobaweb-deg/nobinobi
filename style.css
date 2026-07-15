@@ -443,6 +443,9 @@ nav a:hover { color: var(--gold); }
 .collab-copy p + p {
   margin-top: 14px;
 }
+.collab-line {
+  display: block;
+}
 .no-break {
   white-space: nowrap;
 }
