@@ -462,7 +462,7 @@ nav a:hover { color: var(--gold); }
   .about-box p { font-size: 16px; }
   .copy-lines span { display: inline; }
   .copy-lines span + span::before { content: ""; display: block; height: .45em; }
-  .menu-row { grid-template-columns: 1fr; gap: 50px; margin-top: 60px; }
+  .menu-row { grid-template-columns: 1fr; gap: 64px; margin-top: 60px; }
   .menu-row img { height: 150px; margin-bottom: 22px; }
   .menu-more {
     width: 100%;
@@ -474,7 +474,7 @@ nav a:hover { color: var(--gold); }
     max-width: 100%;
     grid-template-columns: minmax(0, 1fr);
     justify-items: center;
-    gap: 42px;
+    gap: 64px;
   }
   .menu-more-grid article {
     width: min(100%, 320px);
