@@ -449,10 +449,10 @@ nav a:hover { color: var(--gold); }
   nav { display: none; }
   .hero {
     min-height: 0;
-    height: 80vh;
+    height: 90vh;
     aspect-ratio: auto;
     background-image: url("assets/backgrounds/allstar-hero.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center top;
   }
   .hero-copy { left: 3.25vw; right: 18px; bottom: 3.2vw; }
