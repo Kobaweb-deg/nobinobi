@@ -569,7 +569,6 @@ nav a:hover { color: var(--gold); }
     margin-right: auto;
     text-align: center;
     overflow: hidden;
-    transform: translateX(-6px);
   }
   .collab-copy p {
     font-size: 13.2px;
