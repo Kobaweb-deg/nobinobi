@@ -463,7 +463,15 @@ nav a:hover { color: var(--gold); }
   .copy-lines span { display: inline; }
   .copy-lines span + span::before { content: ""; display: block; height: .45em; }
   .menu-row { grid-template-columns: 1fr; gap: 50px; margin-top: 60px; }
-  .menu-row img { height: 150px; margin-bottom: 22px; }
+  .menu-row article {
+    width: min(80vw, 340px);
+    margin: 0 auto;
+  }
+  .menu-row img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 22px;
+  }
   .menu-more {
     width: 100%;
     max-width: 100%;
@@ -477,12 +485,12 @@ nav a:hover { color: var(--gold); }
     gap: 42px;
   }
   .menu-more-grid article {
-    width: min(100%, 320px);
+    width: min(80vw, 340px);
     min-width: 0;
   }
   .menu-more-grid img {
-    width: min(260px, 100%);
-    height: 150px;
+    width: 100%;
+    height: auto;
     margin-bottom: 18px;
   }
   .menu-more-grid h3 { min-height: 0; }
