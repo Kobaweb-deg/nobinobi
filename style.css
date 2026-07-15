@@ -542,32 +542,46 @@ nav a:hover { color: var(--gold); }
   .address-line span + span { margin-left: 0; }
   .address-line--desktop-one { white-space: normal; }
   .contact-row { flex-direction: column; gap: 34px; }
-  .collab-inner { padding: 34px 20px 32px; }
+  .collab-inner { padding: 34px 16px 32px; }
   .collab-logos {
     flex-direction: column;
+    align-items: center;
     gap: 12px;
     margin-bottom: 28px;
   }
   .collab-logos img {
-    width: min(315px, 90vw);
+    width: 300px;
+    max-width: calc(100vw - 32px);
     transform: translateY(3px);
   }
-  .collab-logos .partner-logo { width: min(230px, 76vw); }
+  .collab-logos .partner-logo {
+    width: 230px;
+    max-width: calc(100vw - 72px);
+  }
   .collab-logos b {
     font-size: 34px;
     transform: translateY(-2px);
   }
   .collab-copy {
-    max-width: 360px;
+    width: min(320px, calc(100vw - 48px));
+    max-width: calc(100vw - 32px);
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    overflow: hidden;
+    transform: translateX(-6px);
   }
   .collab-copy p {
-    font-size: 14px;
-    line-height: 1.82;
+    font-size: 13.2px;
+    line-height: 1.78;
     font-weight: 500;
-    text-wrap: pretty;
+    text-wrap: auto;
+  }
+  .collab-line {
+    display: block;
+    white-space: normal;
   }
   .collab-copy p + p {
-    margin-top: 18px;
+    margin-top: 16px;
   }
 }
