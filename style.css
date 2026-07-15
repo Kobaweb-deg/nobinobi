@@ -411,6 +411,18 @@ nav a:hover { color: var(--gold); }
   object-fit: contain;
   transform: translateY(-50%);
 }
+.collab-logos .partner-link {
+  position: absolute;
+  left: calc(50% + 46px);
+  top: 50%;
+  display: block;
+  transform: translateY(-50%);
+}
+.collab-logos .partner-link .partner-logo {
+  position: static;
+  transform: none;
+  display: block;
+}
 .collab-logos b {
   position: absolute;
   left: 50%;
@@ -459,12 +471,14 @@ nav a:hover { color: var(--gold); }
     height: auto;
   }
   .collab-logos img,
+  .collab-logos .partner-link,
   .collab-logos .partner-logo,
   .collab-logos b {
     position: static;
     transform: none;
   }
   .collab-logos img { width: clamp(230px, 35vw, 310px); }
+  .collab-logos .partner-link { display: block; }
   .collab-logos .partner-logo { width: clamp(190px, 28vw, 230px); }
 }
 
