@@ -141,7 +141,7 @@ nav a:hover { color: var(--gold); }
   text-wrap: balance;
 }
 .menu-row p {
-  margin: 8px 0 20px;
+  margin: 8px 0 22px;
   color: var(--gold);
   font-family: "Josefin Sans", sans-serif;
   font-size: 13px;
@@ -149,12 +149,12 @@ nav a:hover { color: var(--gold); }
 }
 .menu-row span {
   display: block;
-  max-width: 240px;
+  max-width: 260px;
   margin: 0 auto;
   color: var(--gold);
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.65;
+  line-height: 1.9;
   word-break: keep-all;
   text-wrap: balance;
 }
@@ -220,7 +220,7 @@ nav a:hover { color: var(--gold); }
   line-height: 1.35;
 }
 .menu-more-grid p {
-  margin: 8px 0 16px;
+  margin: 8px 0 20px;
   min-height: 18px;
   color: var(--gold);
   font-family: "Josefin Sans", sans-serif;
@@ -230,13 +230,13 @@ nav a:hover { color: var(--gold); }
 }
 .menu-more-grid span {
   display: block;
-  max-width: 250px;
+  max-width: 270px;
   margin: 0 auto;
-  min-height: 53px;
+  min-height: 61px;
   color: var(--gold);
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.65;
+  line-height: 1.9;
   word-break: keep-all;
   text-wrap: balance;
 }
@@ -546,17 +546,18 @@ nav a:hover { color: var(--gold); }
   .menu-more-grid img[src$="plain-financier.png"],
   .menu-more-grid img[src$="black-tea-financier.png"] { margin-bottom: 18px; }
   .menu-more-grid span { min-height: 0; }
-  .access-box { padding: 28px 20px 34px; }
+  .access-box { padding: 28px 14px 34px; }
   .access-grid,
   .shop-grid { grid-template-columns: 1fr; gap: 24px; }
   .access-logo,
   .shop-grid img,
   .access-grid iframe,
   .shop-grid iframe { width: 100%; height: 220px; }
+  .shop-grid img:nth-of-type(2) { margin-top: 18px; }
   .address h4 { font-size: 19px; white-space: normal; }
-  .address p { font-size: 17px; letter-spacing: .04em; line-height: 1.55; }
-  .address-line span { display: block; white-space: normal; }
-  .address-line span + span { margin-left: 0; }
+  .address p { font-size: 16px; letter-spacing: .02em; line-height: 1.6; }
+  .address-line span { display: inline-block; white-space: nowrap; }
+  .address-line span + span { margin-left: .35em; }
   .address-line--desktop-one { white-space: normal; }
   .contact-row { flex-direction: column; gap: 34px; }
   .collab-inner { padding: 34px 16px 32px; }
