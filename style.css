@@ -123,21 +123,6 @@ nav a:hover { color: var(--gold); }
   border-radius: 25px;
   box-shadow: 0 2px 9px rgba(77, 64, 30, .15) inset;
 }
-.about-box::after {
-  content: "handmade";
-  position: absolute;
-  right: 24px;
-  bottom: 16px;
-  color: rgba(146, 123, 52, .24);
-  border: 2px solid rgba(146, 123, 52, .2);
-  border-radius: 999px;
-  padding: 6px 15px 4px;
-  font-family: "Patrick Hand", cursive;
-  font-size: 22px;
-  line-height: 1;
-  transform: rotate(-6deg);
-  pointer-events: none;
-}
 .about-box img { width: 124px; }
 .about-box p {
   margin: 0;
@@ -414,10 +399,14 @@ nav a:hover { color: var(--gold); }
   border-radius: 4px;
   box-shadow: 5px 5px 0 rgba(82, 80, 65, .28);
   font-size: 44px;
+  line-height: 1;
   transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
 }
 .contact-row a {
-  display: block;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  min-width: 118px;
   transition: transform .25s ease, color .25s ease;
 }
 .contact-row a:hover {
@@ -430,8 +419,8 @@ nav a:hover { color: var(--gold); }
   transform: translateY(-2px);
 }
 .contact-row .instagram-icon svg {
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.75;
@@ -445,10 +434,10 @@ nav a:hover { color: var(--gold); }
 .contact-row a[href^="mailto:"] span::before {
   content: "";
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 43px;
+  height: 43px;
   margin: auto;
-  transform: translateY(7px);
+  transform: none;
   background: currentColor;
   -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l8 5.1 8-5.1V7H4Zm16 2.8-7.45 4.75a1 1 0 0 1-1.1 0L4 9.8V17h16V9.8Z'/%3E%3C/svg%3E") center / contain no-repeat;
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l8 5.1 8-5.1V7H4Zm16 2.8-7.45 4.75a1 1 0 0 1-1.1 0L4 9.8V17h16V9.8Z'/%3E%3C/svg%3E") center / contain no-repeat;
@@ -652,12 +641,6 @@ nav a:hover { color: var(--gold); }
     background: repeating-linear-gradient(90deg, var(--line) 0 8px, transparent 8px 14px);
   }
   .about-box { grid-template-columns: 1fr; gap: 20px; padding: 28px 22px 44px; text-align: center; }
-  .about-box::after {
-    right: 50%;
-    bottom: 16px;
-    font-size: 19px;
-    transform: translateX(50%) rotate(-5deg);
-  }
   .about-box img { margin: 0 auto; }
   .about-box p { font-size: 16px; }
   .copy-lines span { display: inline; }
@@ -751,6 +734,8 @@ nav a:hover { color: var(--gold); }
     display: grid;
     grid-template-columns: 58px 1fr;
     align-items: center;
+    justify-items: stretch;
+    align-content: center;
     gap: 16px;
     min-height: 72px;
     padding: 10px 16px 10px 12px;
@@ -764,16 +749,16 @@ nav a:hover { color: var(--gold); }
     width: 54px;
     height: 54px;
     margin: 0;
-    font-size: 34px;
+    font-size: 32px;
     box-shadow: none;
   }
   .contact-row .instagram-icon svg {
-    width: 38px;
-    height: 38px;
+    width: 35px;
+    height: 35px;
   }
   .contact-row a[href^="mailto:"] span::before {
-    width: 38px;
-    height: 38px;
+    width: 34px;
+    height: 34px;
     transform: none;
   }
   .contact-row a:active,
